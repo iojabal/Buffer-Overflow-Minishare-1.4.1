@@ -1,0 +1,25 @@
+# Nmap 7.92 scan initiated Sun Sep 11 17:34:12 2022 as: nmap -p- -Pn --min-rate 5000 -vvv -oN win7Pcman 192.168.26.5
+Nmap scan report for 192.168.26.5
+Host is up, received user-set (0.000068s latency).
+Scanned at 2022-09-11 17:34:12 EDT for 13s
+Not shown: 65519 closed tcp ports (conn-refused)
+PORT      STATE SERVICE      REASON
+21/tcp    open  ftp          syn-ack
+25/tcp    open  smtp         syn-ack
+135/tcp   open  msrpc        syn-ack
+139/tcp   open  netbios-ssn  syn-ack
+180/tcp   open  ris          syn-ack
+445/tcp   open  microsoft-ds syn-ack
+554/tcp   open  rtsp         syn-ack
+2869/tcp  open  icslap       syn-ack
+5357/tcp  open  wsdapi       syn-ack
+10243/tcp open  unknown      syn-ack
+49152/tcp open  unknown      syn-ack
+49153/tcp open  unknown      syn-ack
+49154/tcp open  unknown      syn-ack
+49155/tcp open  unknown      syn-ack
+49156/tcp open  unknown      syn-ack
+49159/tcp open  unknown      syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Sep 11 17:34:25 2022 -- 1 IP address (1 host up) scanned in 13.23 seconds
